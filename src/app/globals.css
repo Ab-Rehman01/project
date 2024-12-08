@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Example global styles */
-body {
-  @apply bg-gray-50 text-gray-900;
-  font-family: 'Inter', sans-serif;
-}
 
-a {
-  @apply text-blue-500 hover:text-blue-700 transition duration-300;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Integral+CF:wght@400;700&display=swap');
 

@@ -1,33 +1,26 @@
-import Image from 'next/image';
-
-const Hero = () => {
+export default function HeroSection() {
   return (
-    <section 
-      className="min-h-screen flex flex-col md:flex-row bg-cover bg-center" 
-      style={{ backgroundImage: "url('/h.jpg')" }}
+    <div
+      className="w-full h-[663px] bg-[#F2F0F1] bg-cover bg-center flex items-left justify-center"
+      style={{
+        backgroundImage: "url('/Rectangle 2.png')", // Replace with your image path
+      }}
     >
-      {/* Left side for the image */}
-      <div className="relative w-full md:w-1/2 h-auto flex items-center justify-center p-4 md:p-0">
-        <div className="relative w-full md:w-4/5 h-[200px] md:h-full"> {/* Mobile height adjustment */}
-          <Image 
-            src="/Untitled2.png" 
-            alt="Abdul Rehman"
-            fill // This makes the image fill the container
-            className="object-contain" // Ensures the image maintains aspect ratio
-            sizes="(max-width: 768px) 80vw, (min-width: 769px) 33vw" // Adjusts based on screen size
-          />
+      <div className="max-w-[577px] mx-auto py-8 items-left ">
+        {/* Text Content */}
+        <div
+          style={{ fontFamily: "Integral CF, sans-serif" }}
+        >
+          <p className="w-auto h-[64px] text-left font-black text-black leading-[64px] pl-[50px]">FIND CLOTHES THAT MATCHES YOUR STYLE</p>
+          <p className="w-auto h-[16px] text-left font-black text-black leading-[16px]">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+          <button className="mt-1 px-6 py-0 bg-black text-white rounded-full hover:bg-blue-700 transition">
+            Shop Now
+          </button>
         </div>
       </div>
+      <div className="w-full h-[663px] bg-[#000000] bg-cover bg-center flex items-left justify-center">
 
-      {/* Right side for text */}
-      <div className="text-center text-white flex flex-col items-center justify-center w-full md:w-1/2 p-4">
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-2 text-white-800">I&apos;m</h1>
-        <h1 className="text-5xl md:text-6xl lg:text-8xl font-bold mb-4 text-white-900 glow">Abdul Rehman</h1>
-        <p className="text-lg md:text-xl mb-8 bg-purple-600 p-4 rounded opacity-80">Web Development | Digital Marketing | SEO Optimization</p>
-        <a href="#contact" className="px-5 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-blue-600 text-white rounded">Get Started</a>
       </div>
-    </section>
+    </div>
   );
 }
-
-export default Hero;

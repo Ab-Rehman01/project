@@ -9,7 +9,7 @@ export default function Navbar() {
       </div>
 
       {/* Navbar */}
-      <div className="bg-white border-b">
+      <div className="bg-white border-b p-5">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
           <div>
